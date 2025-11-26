@@ -3,8 +3,8 @@ import SkillsText from "./SkillsText";
 const SkillsMain = () => {
   return (
     <section id="skills" className="relative z-10">
-      <div className="max-w-[1200px] px-6 mx-auto py-12 relative overflow-hidden">
-        <div className="mb-12">
+      <div className="max-w-[1200px] px-6 mx-auto py-8 relative overflow-hidden">
+        <div className="mb-8">
           <SkillsText />
         </div>
         

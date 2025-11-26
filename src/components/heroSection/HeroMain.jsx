@@ -4,7 +4,7 @@ import HeroContactSection from "./HeroContactSection";
 
 const HeroMain = () => {
   return (
-    <div className="relative pt-32 sm:pt-36 md:pt-40 pb-12 sm:pb-16 min-h-screen flex items-center z-10">
+  <div className="relative pt-24 sm:pt-28 md:pt-32 pb-8 sm:pb-12 min-h-screen flex items-center z-10">
       <div className="flex flex-col lg:flex-row max-w-[1200px] w-full mx-auto justify-between items-center relative px-6 z-10 gap-10 lg:gap-14">
         
        

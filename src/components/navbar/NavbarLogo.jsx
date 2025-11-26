@@ -1,7 +1,7 @@
 const NavbarLogo = () => {
   return (
     <div>
-      <h1 className="heading-font font-semibold text-lg text-[#E8F1FF]">
+      <h1 className="heading-font font-semibold site-small text-[#E8F1FF]">
         RS
       </h1>
     </div>

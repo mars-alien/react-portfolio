@@ -109,6 +109,56 @@ const ChatBot = () => {
     }
   };
 
+  // Render message text with clickable links and preserved line breaks
+  const renderTextWithLinks = (text) => {
+    if (!text) return null;
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const elements = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = urlRegex.exec(text)) !== null) {
+      const { index } = match;
+      const url = match[0];
+      if (index > lastIndex) {
+        elements.push(text.slice(lastIndex, index));
+      }
+      // push link element
+      elements.push(
+        <a
+          key={`link-${index}-${url}`}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#4DB6FF] underline break-words"
+        >
+          {url}
+        </a>
+      );
+      lastIndex = index + url.length;
+    }
+
+    if (lastIndex < text.length) {
+      elements.push(text.slice(lastIndex));
+    }
+
+    // Now convert newline characters to <br /> while preserving React nodes
+    const withLineBreaks = [];
+    elements.forEach((el, i) => {
+      if (typeof el === 'string') {
+        const parts = el.split(/\n/);
+        parts.forEach((part, pi) => {
+          if (part) withLineBreaks.push(part);
+          if (pi < parts.length - 1) withLineBreaks.push(<br key={`br-${i}-${pi}`} />);
+        });
+      } else {
+        withLineBreaks.push(el);
+      }
+    });
+
+    return withLineBreaks;
+  };
+
   return (
     <>
       {/* Chat Toggle Button */}
@@ -150,7 +200,7 @@ const ChatBot = () => {
                         : 'bg-slate-900/70 text-[#B7C8E6] rounded-bl-md border-blue-400/20 backdrop-blur-md'
                     }`}
                   >
-                    <p className="text-sm sm:text-sm whitespace-pre-line leading-relaxed">{message.text}</p>
+                    <div className="text-sm sm:text-sm leading-relaxed break-words break-all">{renderTextWithLinks(message.text)}</div>
                     <p className="text-xs opacity-70 mt-1">
                       {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                     </p>

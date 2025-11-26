@@ -12,7 +12,7 @@ const ProjectsText = () => {
   return (
     <div className="flex flex-col items-center mt-[100px] mb-16">
       <animated.h2 
-        className="text-5xl md:text-6xl mb-10 heading-font font-semibold theme-gradient-text"
+        className="site-section-title mb-10 heading-font font-semibold theme-gradient-text"
         style={spring}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}

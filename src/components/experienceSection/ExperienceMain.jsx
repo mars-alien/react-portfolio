@@ -35,14 +35,14 @@ const ExperienceMain = () => {
   });
 
   return (
-          <section id="experience" className="py-20 relative overflow-hidden">
+          <section id="experience" className="py-8 relative overflow-hidden">
       <animated.div
         ref={ref}
         className="max-w-[1100px] mx-auto px-4 relative z-10"
         style={container}
       >
         {/* Section Title */}
-        <div className="flex flex-col items-center text-center mb-12">
+        <div className="flex flex-col items-center text-center mb-8">
           <ExperienceText />
         </div>
 
@@ -52,7 +52,7 @@ const ExperienceMain = () => {
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-[#1E90FF]/50 via-[#4DB6FF]/40 to-transparent h-full rounded-full"></div>
 
           {/* Experience Cards */}
-          <div className="space-y-16">
+          <div className="space-y-12">
             {cards.map((styles, index) => {
               const exp = experiences[index];
               return (

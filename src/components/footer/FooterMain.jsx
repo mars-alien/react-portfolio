@@ -30,10 +30,10 @@ const FooterMain = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
           {/* Logo/Name */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl md:text-3xl font-semibold heading-font transition-colors duration-500 text-[#E8F1FF]">
+            <h3 className="site-h3 font-semibold heading-font transition-colors duration-500 text-[#E8F1FF]">
               Royal Sachan
             </h3>
-            <p className="text-sm mt-2 transition-colors duration-500 text-[#B7C8E6]">
+            <p className="site-small mt-2 transition-colors duration-500 text-[#B7C8E6]">
               Full Stack Web Developer
             </p>
           </div>

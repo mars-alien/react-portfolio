@@ -16,12 +16,12 @@ const AboutMeMain = () => {
   });
 
   return (
-    <section id="about" className="pt-16 pb-20 relative overflow-hidden">
+  <section id="about" className="pt-5 pb-5 relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 w-full">
-        <animated.div
+          <animated.div
           ref={ref}
           style={container}
-          className="theme-card rounded-[32px] px-6 sm:px-12 py-10 sm:py-12"
+          className="theme-card rounded-[32px] px-6 sm:px-12 py-8 sm:py-10"
         >
           <animated.div style={item}>
             <AboutMeText />

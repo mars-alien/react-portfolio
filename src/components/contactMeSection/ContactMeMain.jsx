@@ -9,21 +9,21 @@ const ContactMeMain = () => {
   const item = useSpring({ from: { opacity: 0, y: 20 }, to: { opacity: inView ? 1 : 0, y: inView ? 0 : 20 } });
 
   return (
-    <section id="contact" className="py-20 relative overflow-hidden">
+  <section id="contact" className="py-12 relative overflow-hidden">
       <animated.div
         ref={ref}
         style={container}
         className="max-w-[1200px] mx-auto items-center justify-center px-6 relative z-10"
       >
         <animated.h2 
-          className="text-center text-4xl mb-10 heading-font font-semibold theme-gradient-text"
+          className="text-center text-4xl mb-8 heading-font font-semibold theme-gradient-text"
           style={item}
         >
           Contact Me
         </animated.h2>
         
         <animated.div 
-          className="theme-card rounded-[32px] px-6 sm:px-10 py-10 sm:py-12 flex flex-col lg:flex-row gap-14"
+          className="theme-card rounded-[32px] px-6 sm:px-10 py-8 sm:py-10 flex flex-col lg:flex-row gap-10"
           style={item}
         >
           {/* Left: make full width so items align nicely on all breakpoints; ContactText inside will switch text alignment */}

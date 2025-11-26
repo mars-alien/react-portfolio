@@ -29,7 +29,7 @@ const SingleProject = ({ name, year, align, image, link, summary, stack }) => {
       style={containerSpring}
       className={`flex w-full sm:flex-col-reverse items-start gap-10 ${
         align === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
-      } sm:flex-col`}
+      }`}
     >
       <div className="flex-1 flex flex-col gap-4">
         <animated.h2 

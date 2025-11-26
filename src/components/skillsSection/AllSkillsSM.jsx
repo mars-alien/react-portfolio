@@ -8,7 +8,7 @@ const skills = [
   { skill: "HTML", icon: FaHtml5 },
   { skill: "CSS", icon: FaCss3Alt },
   { skill: "JavaScript", icon: IoLogoJavascript },
-  { skill: "TypeScript", icon: SiTypescript },
+  // { skill: "TypeScript", icon: SiTypescript },
   { skill: "ReactJS", icon: FaReact },
   { skill: "Redux", icon: SiRedux },
   { skill: "NextJS", icon: SiNextdotjs },

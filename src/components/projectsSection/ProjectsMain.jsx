@@ -6,7 +6,7 @@ const projects = [
     name: "Earthquake Map Auto‑Updater",
     year: "June 2024",
     align: "right",
-    image: "../../public/images/earthquake_map.png",
+    image: "/images/earthquake_map.png",
     link: "https://earthquake-cluster-map.streamlit.app/",
     summary:
       "Real-time geospatial map that clusters earthquakes worldwide and supports CSV downloads for deeper analysis.",
@@ -16,7 +16,7 @@ const projects = [
     name: "Pluto- Interactive Learning Platform",
     year: "April 2025",
     align: "left",
-   image: "../../public/images/Pluto_Project.png",
+   image: "/images/Pluto_Project.png",
     link: "https://plutogenz.onrender.com/",
     summary:
       "Full-stack MERN application with authentication and interactive video learning features",
@@ -26,10 +26,10 @@ const projects = [
 
 const ProjectsMain = () => {
   return (
-    <section id="projects">
-      <div className="max-w-[1200px] mx-auto px-6 relative z-10">
+  <section id="projects" className="py-4 overflow-visible">
+      <div className="max-w-[1200px] mx-auto px-6 relative z-10 overflow-visible">
         <ProjectsText />
-        <div className="flex flex-col gap-24 max-w-[1100px] mx-auto mt-16">
+        <div className="flex flex-col gap-20 max-w-[1100px] mx-auto mt-12">
           {projects.map((project, index) => (
             <SingleProject
               key={index}

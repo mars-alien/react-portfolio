@@ -83,10 +83,10 @@ const ContactForm = () => {
           />
         </div>
 
-        <animated.div style={useSpring({ from: { opacity: 0, y: 6 }, to: { opacity: 1, y: 0 } })}>
+        <animated.div className="flex justify-center" style={useSpring({ from: { opacity: 0, y: 6 }, to: { opacity: 1, y: 0 } })}>
           <animated.button
             type="submit"
-            className="w-full md:w-auto h-12 text-lg theme-btn"
+            className="w-full md:w-auto inline-flex items-center justify-center px-6 py-2.5 min-h-[48px] text-lg theme-btn whitespace-nowrap overflow-hidden"
           >
             Send Message
           </animated.button>

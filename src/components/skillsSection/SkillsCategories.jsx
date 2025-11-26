@@ -16,7 +16,7 @@ const SkillsCategories = () => {
         { name: "HTML5", icon: FaHtml5 },
         { name: "CSS3", icon: FaCss3Alt },
         { name: "JavaScript", icon: IoLogoJavascript },
-        { name: "TypeScript", icon: SiTypescript },
+        // { name: "TypeScript", icon: SiTypescript },
         { name: "React.js", icon: FaReact },
         { name: "Tailwind CSS", icon: SiTailwindcss },
       ]
