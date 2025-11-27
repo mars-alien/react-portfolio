@@ -1,3 +1,5 @@
+import React from "react";
+
 const HeroText = () => {
   return (
     <div className="flex flex-col gap-4 sm:gap-6 h-full justify-center text-center lg:text-left theme-body-text max-w-2xl">
@@ -8,10 +10,6 @@ const HeroText = () => {
         Royal <br className="block md:hidden" />
         Sachan
       </h1>
-      {/* <p className="text-base sm:text-lg lg:text-xl mt-2 sm:mt-4 leading-relaxed">
-        I don't just build websites…<br className="hidden sm:block" /> I convince browsers to behave.
-      </p> */}
-      
     </div>
   );
 };

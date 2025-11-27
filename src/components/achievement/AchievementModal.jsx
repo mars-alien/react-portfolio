@@ -55,7 +55,7 @@ const AchievementModal = () => {
 
           <h3 className="text-2xl sm:text-3xl font-semibold heading-font theme-gradient-text">Achievement Unlocked</h3>
 
-          <p className="site-body theme-body-text">Proud to share I secured <strong>AIR 2</strong> in <em>EROH (Engineer Ring of Honour)</em> — Naukri, 2025.</p>
+          <p className="site-body theme-body-text">Proud to share I secured <strong>AIR 2</strong> in <em>EROH (Engineer Ring of Honour)</em> — Naukri Campus, 2025.</p>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full mt-2 justify-center">
             <button
