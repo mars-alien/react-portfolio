@@ -1,3 +1,5 @@
+
+// HeroContactSection.jsx
 import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { 
@@ -19,30 +21,13 @@ const HeroContactSection = () => {
   const handleResumeDownload = async () => {
     try {
       setResumeError(false);
-      let resumeUrl = "/resume.pdf";
+      const resumeUrl = "/Royal_Resume.pdf";
 
-      try {
-        const resp = await fetch(resumeUrl, { method: "HEAD" });
-        if (!resp || !resp.ok) {
-          setResumeError(true);
-          return;
-        }
-
-        const ct = resp.headers.get("content-type") || "";
-        if (!/pdf/i.test(ct)) {
-          console.warn("Resume HEAD returned non-pdf content-type:", ct);
-          setResumeError(true);
-          return;
-        }
-      } catch (e) {
-        setResumeError(true);
-        return;
-      }
-
+      // Open PDF in new tab
       const opened = window.open(resumeUrl, "_blank");
       if (opened) opened.opener = null;
     } catch (err) {
-      console.error("Error while attempting to download/open resume:", err);
+      console.error("Error opening resume:", err);
       setResumeError(true);
     }
   };
