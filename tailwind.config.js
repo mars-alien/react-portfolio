@@ -1,0 +1,103 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./hooks/**/*.{js,ts,jsx,tsx,mdx}",
+    "./constants/**/*.{js,ts,jsx,tsx,mdx}",
+    "./data/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    screens: {
+      sm: "350px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: '#ffffff',
+      black: '#000000',
+      // Light green theme palette
+      emerald: {
+        50:  '#ecfdf5',
+        100: '#d1fae5',
+        200: '#a7f3d0',
+        300: '#6ee7b7',
+        400: '#34d399',
+        500: '#10b981',
+        600: '#059669',
+        700: '#047857',
+        800: '#065f46',
+        900: '#064e3b',
+        950: '#022c22',
+      },
+      green: {
+        50:  '#f0fdf4',
+        100: '#dcfce7',
+        200: '#bbf7d0',
+        300: '#86efac',
+        400: '#4ade80',
+        500: '#22c55e',
+        600: '#16a34a',
+        700: '#15803d',
+        800: '#166534',
+        900: '#14532d',
+      },
+      teal: {
+        300: '#5eead4',
+        400: '#2dd4bf',
+        500: '#14b8a6',
+        600: '#0d9488',
+      },
+      gray: {
+        50:  '#f9fafb',
+        100: '#f3f4f6',
+        200: '#e5e7eb',
+        300: '#d1d5db',
+        400: '#9ca3af',
+        500: '#6b7280',
+        600: '#4b5563',
+        700: '#374151',
+        800: '#1f2937',
+        900: '#111827',
+      },
+      red: {
+        400: '#f87171',
+        500: '#ef4444',
+        600: '#dc2626',
+      },
+      blue: {
+        400: '#60a5fa',
+        500: '#3b82f6',
+        600: '#2563eb',
+      },
+      // Legacy names kept for fallback
+      brown:       "#53423e",
+      lightBrown:  "#645550",
+      darkBrown:   "#2c2523",
+    },
+    extend: {
+      boxShadow: {
+        greenShadow:       "0px 0px 20px 0px rgba(5, 150, 105, 0.35)",
+        greenBigShadow:    "10px 10px 1000px 500px rgba(5, 150, 105, 0.12)",
+        greenMediumShadow: "10px 10px 200px 150px rgba(5, 150, 105, 0.18)",
+        // kept for any legacy references
+        cyanShadow:        "0px 0px 20px 0px rgba(94, 206, 220, 0.5)",
+        cyanBigShadow:     "10px 10px 1000px 500px rgba(94, 206, 220, 0.3)",
+        cyanMediumShadow:  "10px 10px 200px 150px rgba(94, 206, 220, 0.5)",
+        orangeBigShadow:   "10px 10px 10000px 500px rgba(240, 169, 79, 0.3)",
+        orangeMediumShadow:"10px 10px 2000px 150px rgba(240, 169, 79, 0.5)",
+      },
+    },
+    fontFamily: {
+      body:    ["Inter", "Poppins", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "sans-serif"],
+      heading: ["Poppins", "Inter", "sans-serif"],
+      special: ["Poppins", "Space Grotesk", "sans-serif"],
+    },
+  },
+  plugins: [],
+};
